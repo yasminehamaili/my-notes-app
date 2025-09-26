@@ -1,0 +1,82 @@
+@font-face {
+    font-family: babydoll;
+    src: url(../../../public/fonts/BabyDoll.ttf);
+}
+@font-face {
+    font-family: louiscafe;
+    src: url(../../../public/fonts/LouisGeorgeCafe.ttf);
+}
+.signIn{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: left;
+    transform: scaleX(-1);
+}
+.signInEl{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    font-family: louiscafe;
+    height: 70%;
+}
+.title{
+    font-family: babydoll;
+    font-size: 5rem;
+    color: #4D84CF;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+}
+.input{
+    border: 3px solid #4D84CF;
+    width: 350px;
+    padding: 8px 15px;
+    border-radius: 50px;
+    
+}
+.inputEl{
+    width: 100%;
+}
+.inputEl::placeholder{
+    color: #C1D8F7;
+    padding: 0px 7px;
+}
+.btn{
+    color: #4D84CF;
+    background-color: #C1D8F7;
+    padding: 5px 40px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #C1D8F7;
+    background-color: #4D84CF;
+}
+.vs{
+    margin-top: -30px;
+    font-size: 0.8rem;
+    color: #4D84CF;
+}
+.span{
+    cursor: pointer;
+}
+.span:hover{
+    color: #3d67a1;
+}

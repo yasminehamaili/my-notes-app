@@ -1,0 +1,203 @@
+/* app/components/fillInfos/fillInfo.module.css - With image upload styles */
+@font-face {
+    font-family: babydoll;
+    src: url(../../../../public/fonts/BabyDoll.ttf);
+}
+@font-face {
+    font-family: louiscafe;
+    src: url(../../../../public/fonts/LouisGeorgeCafe.ttf);
+}
+
+.modalBackdrop {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.fillInfoMain{
+    height: 100vh;
+    width: 100%;
+    align-content: center;
+    font-family: louiscafe;
+    position: fixed;
+    z-index: 1000;
+}
+
+.fillInfo{
+    height: 70%;
+    width: 50%;
+    background-color: #4D84CF;
+    border-radius: 50px;
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    font-family: babydoll;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.sTitle{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
+}
+
+/* Image Upload Styles */
+.imageSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.imagePreview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #C1D8F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #fff;
+}
+
+.previewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholderImg {
+    color: #4D84CF;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.imageBtn {
+    background-color: #C1D8F7;
+    color: #4D84CF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    font-family: louiscafe;
+}
+
+.imageBtn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Form Input Styles */
+.input, .btn {
+    background-color: #C1D8F7;
+    width: 70%;
+    max-width: 300px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: #4D84CF;
+    border: none;
+    font-family: louiscafe;
+    font-size: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.input::placeholder {
+    color: #4D84CF;
+    opacity: 0.7;
+}
+
+.btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn:disabled:hover {
+    background-color: #C1D8F7;
+    transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fillInfo {
+        width: 90%;
+        height: 80%;
+        padding: 20px;
+        border-radius: 30px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .sTitle {
+        font-size: 1rem;
+    }
+    
+    .imagePreview {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .placeholderImg {
+        font-size: 2.5rem;
+    }
+    
+    .input, .btn {
+        width: 80%;
+        padding: 10px 15px;
+    }
+    
+    .imageBtn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
