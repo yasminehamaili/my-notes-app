@@ -1,4 +1,3 @@
-// app/main/page.js - Updated with image upload
 'use client';
 
 import React, { useState, useEffect } from 'react'
@@ -7,7 +6,7 @@ import { useRouter } from 'next/navigation'
 import style from './main.module.css'
 import FillInfo from '../components/fillInfos/page'
 import NotePopup from '../components/notePopup/page'
-import NoteCard from '../components/noteCard/page'
+import NoteCard from '../components/noteCard/NoteCard'
 
 const Main = () => {
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);

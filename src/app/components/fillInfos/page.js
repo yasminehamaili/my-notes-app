@@ -1,4 +1,4 @@
-// app/components/fillInfos/page.js - With image upload
+
 'use client';
 
 import React, { useState } from 'react'
